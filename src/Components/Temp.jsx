@@ -8,7 +8,8 @@ const Temp = () => {
   const [weatherInfo, setWeatherInfo] = useState({});
   const getWeatherInfo = async () => {
     try {
-      const API = `https://api.openweathermap.org/data/2.5/weather?q=${searchData}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`;
+      const API = `https://api.openweathermap.org/data/2.5/weather?q=${searchData}&units=metric&appid=68b54a3618456ad3799a8e7bc6af6905
+      `;
       await axios
         .get(API)
         .then(function (response) {
